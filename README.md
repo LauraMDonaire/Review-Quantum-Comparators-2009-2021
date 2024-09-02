@@ -25,7 +25,7 @@ Quantum comparators can be classified into three main types:
 
 A **simple comparator** checks whether two values, A and B, are equal or not. These comparators are relatively straightforward and can be easily implemented by comparing each bit of the values one by one.
 
-#### 2. Medium Comparator
+#### 2. Half - Comparator
 
 A **medium comparator** determines whether one value A is greater than or equal to another value B (i.e., A ≥ B). This type of comparator goes beyond mere equality and is useful in scenarios where a more nuanced comparison is required.
 
