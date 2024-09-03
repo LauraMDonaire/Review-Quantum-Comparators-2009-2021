@@ -33,17 +33,7 @@ A **medium comparator** determines whether one value A is greater than or equal 
 
 A **full comparator** performs a more comprehensive comparison by checking whether A is greater than B, equal to B, or less than B (i.e., A > B, A = B, or A < B). This type of comparator provides a complete comparison of the two values and is used when detailed relational information is needed.
 
-## Focus of This Work
-
-In this work, we focus on **medium comparators**, which are currently useful in quantum computing due to their ease of integration with algorithms such as Grover's algorithm. The following review covers the quantum comparators proposed in various sources:
-
-- A. Al-Rabadi, “Closed-system quantum logic network implementation of the Viterbi algorithm,” *Facta Universitatis. Series Electronics and Energetics*, vol. 22 (1), pp. 1–33, 2009.
-- H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010.
-- H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018.
-- H. Xia, H.-S. Li, H. Zhang, Y. Liang, and J. Xin, “Novel multi-bit quantum comparators and their application in image binarization,” *Quantum Information Processing*, vol. 18 (7), p. 229, 2019.
-- F. Orts, G. Ortega, A.C. Cucura, E. Filatovas, and E.M. Garzón, “Optimal fault-tolerant quantum comparators for image binarization,” *The Journal of Supercomputing*, vol. 77, 2021.
-- H.-S. Li, P. Fan, H. Xia, H. Peng, and G. Long, “Efficient quantum arithmetic operation circuits for quantum image processing,” *Science China Physics, Mechanics & Astronomy*, vol. 63, pp. 1–13, 2020.
-
+In this work, we focus on **half - comparators** and **full comparators**. 
 
 ## Motivation
 
@@ -56,7 +46,49 @@ The motivation behind this project is to address the growing need for efficient 
 
 ## Results
 
-The repository provides a detailed study of the quantum comparators, including a comparison based on metrics such as the number of quantum gates used, quantum cost, and efficiency. This analysis is designed to assist designers in selecting the most appropriate comparator for their specific requirements.
+The repository provides a detailed study of the quantum comparators, including a comparison based on metrics such as the number of quantum gates used, quantum cost, and efficiency. This analysis is designed to assist designers in selecting the most appropriate comparator for their specific requirements. 
+
+### Overview of Circuit Metrics
+
+Tables 1 and 2 show the metrics of the circuits studied in this work. For clarity, these studies have worked with numbers of a specific size. For example, the circuit by Orts et al. is shown in Figure 5.15 adapted to work with 8-digit numbers. However, it is clear that these circuits can be adapted to any size $n$. Since comparing circuits that work with different sizes is highly inefficient, Tables 1 and 2 do not show specific values. Instead, the equations used to calculate each metric in the general case are shown, i.e., for a generic number size $n$ digits (for each number compared, that is, to compare two numbers of $n$ digits).
+
+### Table 1: General Equations for Cost and Delay of the Reviewed Comparators
+
+| Comparator | Cost | Delay |
+|------------|------|-------|
+| Al-Rabadi et al. [[1]](#1) | $19.5n + 5\log(2^n)$ | $16.5n + 5\log(2^n)$ |
+| Thapliyal et al. [[2]](#2) | $13.5n + 27\log(2^n) + 1$ | $9n + 18\log(2^n) + 1$|
+| Xia et al. (2018) [[3]](#3) | $36n$ | $27n + 6$ |
+| Xia et al. (2019) [[4]](#4) | $18n - 12$ | $14n - 7$ |
+| Li et al. (2020) [[5]](#5) | $12n - 8$ | $10n - 6$ |
+| Orts et al. (a) [[6]](#6) | $22n - 10$ | $18n - 8$ |
+| Orts et al. (b) [[6]](#6) | $\approx 32n + 46\log(n)$ | $\log(n)$ |
+
+### Table 2: General Equations for T-count, T-depth, and Auxiliary Bits of the Reviewed Comparators
+
+| Comparator              | T-count                                | T-depth                               | Auxiliary                           |
+|-------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
+| Al-Rabadi et al. [[1]](#1)    | $21n + 7\log(2^n)$                     | $9n + 3\log(2^n)$                     | $3n$                                |
+| Thapliyal et al. [[2]](#2)    | $21n + 42\log(2^n) + 1$               | $8n + 16\log(2^n) + 1$               | $n + 2\log(2^n) + 1$               |
+| Xia et al. (2018) [[3]](#3)   | $28n$                                 | $12n$                                 | $3$                                  |
+| Xia et al. (2019) [[4]](#4)   | $18n - 12$                            | $6n - 3$                              | $2n$                                 |
+| Li et al. (2020) [[5]](#5)    | $14n - 8$                             | $4n - 2$                              | $2n$                                 |
+| Orts et al. (a) [[6]](#6)     | $4n$                                  | $2n$                                  | $1$                                  |
+| Orts et al. (b) [[6]](#6)     | $12n - 8W(n) - 4\log(n)$              | $\log(n)$                             | $4n - 2W(n) - 2\log(n)$            |
+
+Table 1 compares the quantum cost and delay of various half-comparators. The half-comparators proposed by Al-Rabadi, Thapliyal, and Orts et al. (b) exhibit logarithmic cost and delay, while the others show linear behavior.
+
+- **Quantum Cost**: Li et al. offer the most efficient half-comparator with a quantum cost of $12n - 8$. In contrast, Xia et al. (2018) have the highest cost at $36n$, making it three times less efficient than Li et al.
+  
+- **Quantum Delay**: Orts et al. (b) propose the best half-comparator with a logarithmic delay of $\log(n)$. The least efficient in terms of delay is Xia et al. (2018) with $27n + 6$.
+
+Table 2 provides a comparison in terms of T-count, T-depth, and auxiliary inputs:
+
+- **T-count**: Orts et al. (a) achieves the lowest T-count with $4n$, while Thapliyal et al. have the highest at $21n + 42\log(2n) + 1$, making it eight times larger.
+  
+- **T-depth**: Al-Rabadi, Thapliyal, and Orts offer logarithmic T-depth, with Orts et al. being the best at $\log(n)$, while Thapliyal et al. have the highest T-depth.
+  
+- **Auxiliary Inputs**: Li et al. present the most efficient design with only one auxiliary input. In contrast, Al-Rabadi et al. require the most at $3n$.
 
 ## Future Work
 
@@ -64,6 +96,16 @@ The repository provides a detailed study of the quantum comparators, including a
 - Expansion of the analysis to include more complex quantum circuits and their potential applications.
 - Continuous refinement of the metrics to ensure they remain relevant as quantum computing technology evolves.
 
+## References 
+
+The following review covers the quantum comparators proposed in various sources:
+
+- <a name="1">[1]</a> A. Al-Rabadi, “Closed-system quantum logic network implementation of the Viterbi algorithm,” *Facta Universitatis. Series Electronics and Energetics*, vol. 22 (1), pp. 1–33, 2009.
+- <a name="2">[2]</a> H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010.
+- <a name="3">[3]</a> H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018.
+- <a name="4">[4]</a> H. Xia, H.-S. Li, H. Zhang, Y. Liang, and J. Xin, “Novel multi-bit quantum comparators and their application in image binarization,” *Quantum Information Processing*, vol. 18 (7), p. 229, 2019.
+- <a name="5">[5]</a> H.-S. Li, P. Fan, H. Xia, H. Peng, and G. Long, “Efficient quantum arithmetic operation circuits for quantum image processing,” *Science China Physics, Mechanics & Astronomy*, vol. 63, pp. 1–13, 2020.
+- <a name="6">[6]</a> F. Orts, G. Ortega, A.C. Cucura, E. Filatovas, and E.M. Garzón, “Optimal fault-tolerant quantum comparators for image binarization,” *The Journal of Supercomputing*, vol. 77, 2021.
 ## Acknowledgments
 
 I would like to thank my advisors, Gloria Ortega López and Francisco José Orts Gómez, for their guidance throughout this project. Special thanks to the University of Almería and the Department of Computer Science for their support.
