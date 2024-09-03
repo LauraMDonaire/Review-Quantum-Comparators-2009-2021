@@ -100,12 +100,13 @@ Table 2 provides a comparison in terms of T-count, T-depth, and auxiliary inputs
 
 The following review covers the quantum comparators proposed in various sources:
 
-- <a name="1">[1]</a> A. Al-Rabadi, “Closed-system quantum logic network implementation of the Viterbi algorithm,” *Facta Universitatis. Series Electronics and Energetics*, vol. 22 (1), pp. 1–33, 2009.
-- <a name="2">[2]</a> H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010.
-- <a name="3">[3]</a> H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018.
-- <a name="4">[4]</a> H. Xia, H.-S. Li, H. Zhang, Y. Liang, and J. Xin, “Novel multi-bit quantum comparators and their application in image binarization,” *Quantum Information Processing*, vol. 18 (7), p. 229, 2019.
-- <a name="5">[5]</a> H.-S. Li, P. Fan, H. Xia, H. Peng, and G. Long, “Efficient quantum arithmetic operation circuits for quantum image processing,” *Science China Physics, Mechanics & Astronomy*, vol. 63, pp. 1–13, 2020.
-- <a name="6">[6]</a> F. Orts, G. Ortega, A.C. Cucura, E. Filatovas, and E.M. Garzón, “Optimal fault-tolerant quantum comparators for image binarization,” *The Journal of Supercomputing*, vol. 77, 2021.
+- <a name="1">[1]</a> A. Al-Rabadi, “Closed-system quantum logic network implementation of the Viterbi algorithm,” *Facta Universitatis. Series Electronics and Energetics*, vol. 22 (1), pp. 1–33, 2009. [DOI:10.2298/FUEE0901001A](https://doi.org/10.2298/FUEE0901001A)
+- <a name="2">[2]</a> H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010. [DOI: 10.1109/NANO.2010.5697872](https://doi.org/10.1109/NANO.2010.5697872)
+- <a name="3">[3]</a> H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018. [DOI: 10.1007/s10773-018-3886-0](https://doi.org/10.1007/s10773-018-3886-0)
+- <a name="4">[4]</a> H. Xia, H.-S. Li, H. Zhang, Y. Liang, and J. Xin, “Novel multi-bit quantum comparators and their application in image binarization,” *Quantum Information Processing*, vol. 18 (7), p. 229, 2019. [DOI: 10.1007/s11128-019-2334-2](https://doi.org/10.1007/s11128-019-2334-2)
+- <a name="5">[5]</a> H.-S. Li, P. Fan, H. Xia, H. Peng, and G. Long, “Efficient quantum arithmetic operation circuits for quantum image processing,” *Science China Physics, Mechanics & Astronomy*, vol. 63, pp. 1–13, 2020. [DOI: 10.1007/s11433-020-1582-8](https://doi.org/10.1007/s11433-020-1582-8)
+- <a name="6">[6]</a> F. Orts, G. Ortega, A.C. Cucura, E. Filatovas, and E.M. Garzón, “Optimal fault-tolerant quantum comparators for image binarization,” *The Journal of Supercomputing*, vol. 77, 2021. [DOI: 10.1007/s11227-020-03576-5](https://doi.org/10.1007/s11227-020-03576-5)
+  
 ## Acknowledgments
 
 I would like to thank my advisors, Gloria Ortega López and Francisco José Orts Gómez, for their guidance throughout this project. Special thanks to the University of Almería and the Department of Computer Science for their support.
