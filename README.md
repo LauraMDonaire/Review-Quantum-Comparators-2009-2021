@@ -98,8 +98,6 @@ Table 2 provides a comparison in terms of T-count, T-depth, and auxiliary inputs
 
 ## References 
 
-The following review covers the quantum comparators proposed in various sources:
-
 - <a name="1">[1]</a> A. Al-Rabadi, “Closed-system quantum logic network implementation of the Viterbi algorithm,” *Facta Universitatis. Series Electronics and Energetics*, vol. 22 (1), pp. 1–33, 2009. [DOI:10.2298/FUEE0901001A](https://doi.org/10.2298/FUEE0901001A)
 - <a name="2">[2]</a> H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010. [DOI: 10.1109/NANO.2010.5697872](https://doi.org/10.1109/NANO.2010.5697872)
 - <a name="3">[3]</a> H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018. [DOI: 10.1007/s10773-018-3886-0](https://doi.org/10.1007/s10773-018-3886-0)
