@@ -50,7 +50,7 @@ The repository provides a detailed study of the quantum comparators, including a
 
 ### Overview of Circuit Metrics
 
-Tables 1 and 2 show the metrics of the circuits studied in this work. For clarity, these studies have worked with numbers of a specific size. For example, the circuit by Orts et al. is shown in Figure 5.15 adapted to work with 8-digit numbers. However, it is clear that these circuits can be adapted to any size $n$. Since comparing circuits that work with different sizes is highly inefficient, Tables 1 and 2 do not show specific values. Instead, the equations used to calculate each metric in the general case are shown, i.e., for a generic number size $n$ digits (for each number compared, that is, to compare two numbers of $n$ digits).
+Tables 1 and 2 show the metrics of the circuits studied in this work. For clarity, these studies have worked with numbers of a specific size. For example, the circuit by Orts et al. shown [here](./Half-Comparators/Orts%20et%20al.%202021/Orts's%20Quantum%20Half%20Comparator(n=8).pdf) is adapted to work with 8-digit numbers. However, it is clear that these circuits can be adapted to any size $n$. Since comparing circuits that work with different sizes is highly inefficient, Tables 1 and 2 do not show specific values. Instead, the equations used to calculate each metric in the general case are shown, i.e., for a generic number size $n$ digits (for each number compared, that is, to compare two numbers of $n$ digits).
 
 ### Table 1: General Equations for Cost and Delay of the Reviewed Comparators
 
