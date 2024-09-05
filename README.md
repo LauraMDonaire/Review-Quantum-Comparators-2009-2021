@@ -56,7 +56,6 @@ Tables 1 and 2 show the metrics of the circuits studied in this work. For clarit
 
 | Comparator | Cost | Delay |
 |------------|------|-------|
-| Al-Rabadi et al. [[1]](#1) | $19.5n + 5\log(2^n)$ | $16.5n + 5\log(2^n)$ |
 | Thapliyal et al. [[2]](#2) | $13.5n + 27\log(2^n) + 1$ | $9n + 18\log(2^n) + 1$|
 | Xia et al. (2018) [[3]](#3) | $36n$ | $27n + 6$ |
 | Xia et al. (2019) [[4]](#4) | $18n - 12$ | $14n - 7$ |
@@ -68,7 +67,6 @@ Tables 1 and 2 show the metrics of the circuits studied in this work. For clarit
 
 | Comparator              | T-count                                | T-depth                               | Auxiliary                           |
 |-------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
-| Al-Rabadi et al. [[1]](#1)    | $21n + 7\log(2^n)$                     | $9n + 3\log(2^n)$                     | $3n$                                |
 | Thapliyal et al. [[2]](#2)    | $21n + 42\log(2^n) + 1$               | $8n + 16\log(2^n) + 1$               | $n + 2\log(2^n) + 1$               |
 | Xia et al. (2018) [[3]](#3)   | $28n$                                 | $12n$                                 | $3$                                  |
 | Xia et al. (2019) [[4]](#4)   | $18n - 12$                            | $6n - 3$                              | $2n$                                 |
