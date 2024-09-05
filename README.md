@@ -56,23 +56,23 @@ Tables 1 and 2 show the metrics of the circuits studied in this work. For clarit
 
 | Comparator | Cost | Delay |
 |------------|------|-------|
-| Thapliyal et al. [[2]](#2) | $13.5n + 27\log(2^n) + 1$ | $9n + 18\log(2^n) + 1$|
-| Xia et al. (2018) [[3]](#3) | $36n$ | $27n + 6$ |
-| Xia et al. (2019) [[4]](#4) | $18n - 12$ | $14n - 7$ |
-| Li et al. (2020) [[5]](#5) | $12n - 8$ | $10n - 6$ |
-| Orts et al. (a) [[6]](#6) | $22n - 10$ | $18n - 8$ |
-| Orts et al. (b) [[6]](#6) | $\approx 32n + 46\log(n)$ | $\log(n)$ |
+| Thapliyal et al. [[1]](#1) | $13.5n + 27\log(2^n) + 1$ | $9n + 18\log(2^n) + 1$|
+| Xia et al. (2018) [[2]](#2) | $36n$ | $27n + 6$ |
+| Xia et al. (2019) [[3]](#3) | $18n - 12$ | $14n - 7$ |
+| Li et al. (2020) [[4]](#4) | $12n - 8$ | $10n - 6$ |
+| Orts et al. (a) [[5]](#5) | $22n - 10$ | $18n - 8$ |
+| Orts et al. (b) [[5]](#5) | $\approx 32n + 46\log(n)$ | $\log(n)$ |
 
 ### Table 2: General Equations for T-count, T-depth, and Auxiliary Bits of the Reviewed Comparators
 
 | Comparator              | T-count                                | T-depth                               | Auxiliary                           |
 |-------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
-| Thapliyal et al. [[2]](#2)    | $21n + 42\log(2^n) + 1$               | $8n + 16\log(2^n) + 1$               | $n + 2\log(2^n) + 1$               |
-| Xia et al. (2018) [[3]](#3)   | $28n$                                 | $12n$                                 | $3$                                  |
-| Xia et al. (2019) [[4]](#4)   | $18n - 12$                            | $6n - 3$                              | $2n$                                 |
-| Li et al. (2020) [[5]](#5)    | $14n - 8$                             | $4n - 2$                              | $2n$                                 |
-| Orts et al. (a) [[6]](#6)     | $4n$                                  | $2n$                                  | $1$                                  |
-| Orts et al. (b) [[6]](#6)     | $12n - 8W(n) - 4\log(n)$              | $\log(n)$                             | $4n - 2W(n) - 2\log(n)$            |
+| Thapliyal et al. [[1]](#1)    | $21n + 42\log(2^n) + 1$               | $8n + 16\log(2^n) + 1$               | $n + 2\log(2^n) + 1$               |
+| Xia et al. (2018) [[2]](#2)   | $28n$                                 | $12n$                                 | $3$                                  |
+| Xia et al. (2019) [[3]](#3)   | $18n - 12$                            | $6n - 3$                              | $2n$                                 |
+| Li et al. (2020) [[4]](#4)    | $14n - 8$                             | $4n - 2$                              | $2n$                                 |
+| Orts et al. (a) [[5]](#5)     | $4n$                                  | $2n$                                  | $1$                                  |
+| Orts et al. (b) [[5]](#5)     | $12n - 8W(n) - 4\log(n)$              | $\log(n)$                             | $4n - 2W(n) - 2\log(n)$            |
 
 Table 1 compares the quantum cost and delay of various half-comparators. The half-comparators proposed by Al-Rabadi, Thapliyal, and Orts et al. (b) exhibit logarithmic cost and delay, while the others show linear behavior.
 
@@ -95,13 +95,11 @@ Table 2 provides a comparison in terms of T-count, T-depth, and auxiliary inputs
 - Continuous refinement of the metrics to ensure they remain relevant as quantum computing technology evolves.
 
 ## References 
-
-- <a name="1">[1]</a> A. Al-Rabadi, “Closed-system quantum logic network implementation of the Viterbi algorithm,” *Facta Universitatis. Series Electronics and Energetics*, vol. 22 (1), pp. 1–33, 2009. [DOI:10.2298/FUEE0901001A](https://doi.org/10.2298/FUEE0901001A)
-- <a name="2">[2]</a> H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010. [DOI: 10.1109/NANO.2010.5697872](https://doi.org/10.1109/NANO.2010.5697872)
-- <a name="3">[3]</a> H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018. [DOI: 10.1007/s10773-018-3886-0](https://doi.org/10.1007/s10773-018-3886-0)
-- <a name="4">[4]</a> H. Xia, H.-S. Li, H. Zhang, Y. Liang, and J. Xin, “Novel multi-bit quantum comparators and their application in image binarization,” *Quantum Information Processing*, vol. 18 (7), p. 229, 2019. [DOI: 10.1007/s11128-019-2334-2](https://doi.org/10.1007/s11128-019-2334-2)
-- <a name="5">[5]</a> H.-S. Li, P. Fan, H. Xia, H. Peng, and G. Long, “Efficient quantum arithmetic operation circuits for quantum image processing,” *Science China Physics, Mechanics & Astronomy*, vol. 63, pp. 1–13, 2020. [DOI: 10.1007/s11433-020-1582-8](https://doi.org/10.1007/s11433-020-1582-8)
-- <a name="6">[6]</a> F. Orts, G. Ortega, A.C. Cucura, E. Filatovas, and E.M. Garzón, “Optimal fault-tolerant quantum comparators for image binarization,” *The Journal of Supercomputing*, vol. 77, 2021. [DOI: 10.1007/s11227-020-03576-5](https://doi.org/10.1007/s11227-020-03576-5)
+- <a name="1">[1]</a> H. Thapliyal, N. Ranganathan, and R. Ferreira, “Design of a comparator tree based on reversible logic,” 2010 10th IEEE Conference on Nanotechnology, pp. 1113–1116, 2010. [DOI: 10.1109/NANO.2010.5697872](https://doi.org/10.1109/NANO.2010.5697872)
+- <a name="2">[2]</a> H. Xia, H.-S. Li, and H. Zhang, “An efficient design of reversible multi-bit quantum comparator via only a single ancillary bit,” *International Journal of Theoretical Physics*, vol. 57 (12), pp. 3727–3744, 2018. [DOI: 10.1007/s10773-018-3886-0](https://doi.org/10.1007/s10773-018-3886-0)
+- <a name="3">[3]</a> H. Xia, H.-S. Li, H. Zhang, Y. Liang, and J. Xin, “Novel multi-bit quantum comparators and their application in image binarization,” *Quantum Information Processing*, vol. 18 (7), p. 229, 2019. [DOI: 10.1007/s11128-019-2334-2](https://doi.org/10.1007/s11128-019-2334-2)
+- <a name="4">[4]</a> H.-S. Li, P. Fan, H. Xia, H. Peng, and G. Long, “Efficient quantum arithmetic operation circuits for quantum image processing,” *Science China Physics, Mechanics & Astronomy*, vol. 63, pp. 1–13, 2020. [DOI: 10.1007/s11433-020-1582-8](https://doi.org/10.1007/s11433-020-1582-8)
+- <a name="5">[5]</a> F. Orts, G. Ortega, A.C. Cucura, E. Filatovas, and E.M. Garzón, “Optimal fault-tolerant quantum comparators for image binarization,” *The Journal of Supercomputing*, vol. 77, 2021. [DOI: 10.1007/s11227-020-03576-5](https://doi.org/10.1007/s11227-020-03576-5)
   
 ## Acknowledgments
 
