@@ -33,7 +33,7 @@ A **medium comparator** determines whether one value A is greater than or equal 
 
 A **full comparator** performs a more comprehensive comparison by checking whether A is greater than B, equal to B, or less than B (i.e., A > B, A = B, or A < B). This type of comparator provides a complete comparison of the two values and is used when detailed relational information is needed.
 
-In this work, we focus on **half - comparators** and **full comparators**. 
+In this work, we focus on **half-comparators**, but some **full comparators** will also be studied, even though they are not included in Table 1.
 
 ## Motivation
 
