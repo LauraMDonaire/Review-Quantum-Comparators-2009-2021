@@ -1,4 +1,4 @@
-# Quantum Comparators
+# Review of Quantum Comparators
 
 ## Overview
 
@@ -104,3 +104,15 @@ Table 2 provides a comparison in terms of T-count, T-depth, and auxiliary inputs
 ## Acknowledgments
 
 I would like to thank my advisors, Gloria Ortega López and Francisco José Orts Gómez, for their guidance throughout this project. Special thanks to the University of Almería and the Department of Computer Science for their support.
+
+## How to Cite
+
+If you find this work useful and wish to cite it, please use the following reference:
+
+Donaire, L. M., Ortega, G., Garzón, E. M., & Orts, F. (2024). Lowering the cost of quantum comparator circuits. Journal of Supercomputing, 80, 13900–13917. https://doi.org/10.1007/s11227-024-05959-4
+
+## Contact
+
+For more information, suggestions, or collaboration, you can contact:
+
+- **Laura M. Donaire** (TIC-146 Supercomputación-Algoritmos [SAL], University of Almería): [laura.donaire@ual.es](mailto:laura.donaire@ual.es)
